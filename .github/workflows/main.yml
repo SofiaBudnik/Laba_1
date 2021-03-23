@@ -15,8 +15,4 @@ jobs:
     - uses: actions/checkout@v2
     - name: compiling and testing
       run: |
-        for d in */ ; do
-        cd "$d"
-        make
-        cd ..
-        done
+        make -C Laba_1/
